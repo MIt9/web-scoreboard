@@ -1,0 +1,35 @@
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 3vh;
+    flex-direction: row;
+}
+
+.weight {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 15vh
+}
+
+.weight-value {
+    min-width: 2vh;
+}
+
+.state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
+.match, .period {
+    display: flex;
+    flex-direction: row;
+}
+
+.match-value {
+    min-width: 2vh;
+}

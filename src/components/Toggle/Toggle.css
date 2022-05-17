@@ -1,0 +1,7 @@
+.toggle {
+    border-bottom: 3px solid transparent;
+}
+
+.toggle-active {
+    border-color: inherit;
+}

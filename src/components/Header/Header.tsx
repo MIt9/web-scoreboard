@@ -1,0 +1,25 @@
+import React, { FC } from "react";
+
+import {LanguageType} from "../../types";
+import {getLngDate, LNG_KEYS} from "../../services/lngService";
+
+import Points from "../Points/Points";
+import EditableBlock from "../EditableBlock/EditableBlock";
+
+import "./Header.css";
+
+const Header: FC<LanguageType> = ({lng}) => {
+    return <header className="header-wrapper">
+        <div className="weight">
+            <Points key={1} maxValue={20} circle={true} fromZero={false} className="weight-value"/>
+            <Points key={2} maxValue={9} circle={true} fromZero={true} className="weight-value"/>
+            {getLngDate(LNG_KEYS.kg, lng)}
+        </div>
+        <div className="state">
+            <div className="match">{getLngDate(LNG_KEYS.match, lng)}: <EditableBlock defaultText={"0"} className="match-value"/></div>
+            <div className="period">{getLngDate(LNG_KEYS.period, lng)}: <Points maxValue={2} circle={true} fromZero={false} className="period-value"/></div>
+        </div>
+    </header>
+};
+
+export default Header;

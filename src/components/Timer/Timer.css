@@ -1,0 +1,59 @@
+.timer-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 100%;
+}
+.timer-content {
+    position: absolute;
+    cursor: pointer;
+}
+
+.timer-large {
+    width: 30vw;
+    height: 30vw;
+}
+
+.timer-large .timer-content {
+    font-size: 11vw;
+}
+
+.timer__svg {
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+}
+
+.timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+}
+
+.timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+}
+
+.timer__path-remaining.orange {
+    color: orange;
+}
+
+.timer__path-remaining.red {
+    color: red;
+}
+

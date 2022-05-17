@@ -1,0 +1,39 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.center-holder {
+    display: flex;
+    flex-direction: column;
+    width: 36vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 32vw;
+    align-items: center;
+    justify-content: center;
+}
+.center-list {
+    display: block;
+    border-radius: 100%;
+    background-color: black;
+    font-size: 6vw;
+    padding: 5vw 2vw;
+    min-width: 14vw;
+    text-align: center;
+    cursor: pointer;
+}
+.header-wrapper {
+    flex: 2;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex: 3;
+}
+
+

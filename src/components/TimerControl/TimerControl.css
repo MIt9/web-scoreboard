@@ -1,0 +1,9 @@
+.si-glyph-clock, .si-glyph-history {
+    cursor: pointer;
+}
+.timer-control__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}

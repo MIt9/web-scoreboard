@@ -1,0 +1,24 @@
+.settings__gear {
+  width: 30px;
+  height: 30px;
+  fill: #575454;
+  cursor: pointer;
+}
+.settings-wrapper {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -300px;
+  display: flex;
+  flex-direction: row;
+  transition: all 1s;
+}
+.settings-wrapper.settings-wrapper__open {
+  right: 0;
+}
+.settings-holder {
+  width: 260px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}

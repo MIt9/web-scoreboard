@@ -1,0 +1,30 @@
+.sportsman-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2vh 4vh;
+}
+
+.sportsman-city {
+    font-size: 8vh;
+    min-width: 3vh;
+}
+
+.sportsman-points {
+    font-size: 40vh;
+    display: flex;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.sportsman-toggle {
+    font-size: 5vh;
+}
+
+.direction-left {
+    align-items: flex-start;
+}
+
+.direction-right {
+    align-items: flex-end;
+}
