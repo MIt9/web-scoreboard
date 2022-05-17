@@ -1,6 +1,6 @@
 {
-  "name": "web-tablo-3",
-  "version": "0.1.0",
+  "name": "web-scoreboard-3",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
@@ -66,6 +66,7 @@
     "@storybook/preset-create-react-app": "^4.0.1",
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "^0.0.9",
+    "gh-pages": "^4.0.0",
     "webpack": "^5.69.1"
   }
 }
