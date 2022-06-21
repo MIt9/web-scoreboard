@@ -1,5 +1,5 @@
-const CACHE_NAME = "version-1";
-const urlsToCache = [ 'index.html', 'beep.mp3'];
+const CACHE_NAME = "version-8";
+const urlsToCache = [ "/", "/index.html", "/manifest.json", '/audio/beep.mp3', '/logo.png', '/787.chunk.js', "/main.css", "/main.js"];
 
 const self = this;
 
@@ -21,23 +21,23 @@ self.addEventListener('fetch', (event) => {
         caches.match(event.request)
             .then(() => {
                 return fetch(event.request)
-                    .catch(() => caches.match('index.html'))
+                    .catch(() => caches.match('/'))
             })
     )
 });
 
 // Activate the SW
 self.addEventListener('activate', (event) => {
-    const cacheWhitelist = [];
-    cacheWhitelist.push(CACHE_NAME);
+    const cacheWhitelist = [CACHE_NAME];
 
     event.waitUntil(
         caches.keys().then((cacheNames) => Promise.all(
             cacheNames.map((cacheName) => {
+                console.log(cacheName);
                 if(!cacheWhitelist.includes(cacheName)) {
+                    console.log("remove cacheName", cacheName);
                     return caches.delete(cacheName);
                 }
-                return cacheName;
             })
         ))
 

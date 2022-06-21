@@ -1,1 +1,1 @@
-# Free scoreboard for greco-roman wrestling competition
+    # Free scoreboard for greco-roman wrestling competition
