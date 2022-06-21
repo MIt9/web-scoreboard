@@ -1,5 +1,5 @@
-const CACHE_NAME = "version-8";
-const urlsToCache = [ "/", "/index.html", "/manifest.json", '/audio/beep.mp3', '/logo.png', '/787.chunk.js', "/main.css", "/main.js"];
+const CACHE_NAME = "version-9";
+const urlsToCache = [ "/", "index.html", "manifest.json", 'audio/beep.mp3', 'logo.png', '787.chunk.js', "main.css", "main.js"];
 
 const self = this;
 
@@ -21,7 +21,7 @@ self.addEventListener('fetch', (event) => {
         caches.match(event.request)
             .then(() => {
                 return fetch(event.request)
-                    .catch(() => caches.match('/'))
+                    .catch(() => caches.match('index.html'))
             })
     )
 });
