@@ -1,7 +1,9 @@
-const CACHE_NAME = "version-9";
-const urlsToCache = [ "/", "index.html", "manifest.json", 'audio/beep.mp3', 'logo.png', '787.chunk.js', "main.css", "main.js"];
-
 const self = this;
+
+const scriptLink = (self.serviceWorker.scriptURL || "").split("?");
+const src = (new URLSearchParams(scriptLink[1] || "v=1")).get("v");
+const CACHE_NAME = src;
+const urlsToCache = [ "/", "index.html", "manifest.json", 'audio/beep.mp3', 'logo.png', '787.chunk.js', "main.css", "main.js"];
 
 // Install SW
 self.addEventListener('install', (event) => {
