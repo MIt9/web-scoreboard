@@ -2,23 +2,23 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 2vh 4vh;
+    padding: 2vmin 4vmin;
 }
 
 .sportsman-city {
-    font-size: 8vh;
-    min-width: 3vh;
+    font-size: 8vmin;
+    min-width: 3vmin;
 }
 
 .sportsman-points {
-    font-size: 40vh;
+    font-size: 40vmin;
     display: flex;
     justify-self: center;
     cursor: pointer;
 }
 
 .sportsman-toggle {
-    font-size: 5vh;
+    font-size: 5vmin;
 }
 
 .direction-left {

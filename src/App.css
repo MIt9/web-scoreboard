@@ -23,9 +23,9 @@ html {
     display: block;
     border-radius: 100%;
     background-color: black;
-    font-size: 6vw;
-    padding: 5vw 2vw;
-    min-width: 14vw;
+    font-size: 6vmin;
+    padding: 5vmin 2vmin;
+    min-width: 14vmin;
     text-align: center;
     cursor: pointer;
 }

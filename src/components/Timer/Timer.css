@@ -12,12 +12,12 @@
 }
 
 .timer-large {
-    width: 30vw;
-    height: 30vw;
+    width: 30vmin;
+    height: 30vmin;
 }
 
 .timer-large .timer-content {
-    font-size: 11vw;
+    font-size: 11vmin;
 }
 
 .timer__svg {

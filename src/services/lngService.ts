@@ -21,7 +21,7 @@ const ENG = {
     [LNG_KEYS.match]: "match",
     [LNG_KEYS.period]: "period",
     [LNG_KEYS.stages]: ["Qual","1/32", "1/16","1/8","1/4","1/2","Rep","F3","F"],
-    [LNG_KEYS.sportsmanPlaceholder]: "sportsman"
+    [LNG_KEYS.sportsmanPlaceholder]: "Rival"
 };
 
 const UKR = {

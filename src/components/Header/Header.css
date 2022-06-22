@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vh 3vh;
+    padding: 2vmin 3vmin;
     flex-direction: row;
 }
 
@@ -10,11 +10,11 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-    font-size: 15vh
+    font-size: 15vmin
 }
 
 .weight-value {
-    min-width: 2vh;
+    min-width: 2vmin;
 }
 
 .state {
@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
+    font-size: 5vmin;
 }
 
 .match, .period {
@@ -31,5 +31,5 @@
 }
 
 .match-value {
-    min-width: 2vh;
+    min-width: 2vmin;
 }
