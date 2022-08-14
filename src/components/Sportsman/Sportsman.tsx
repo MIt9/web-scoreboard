@@ -17,7 +17,7 @@ type SportsmanType = {
 const Sportsman: FC<SportsmanType> = ({className, align, color, lng}) => {
     const cn = `sportsman-wrapper direction-${align} ${className || ""}`;
     return <div className={cn} style={{backgroundColor: color}}>
-        <EditableBlock defaultText={getLngDate(LNG_KEYS.sportsmanPlaceholder, lng)} className="sportsman-city"/>
+        <EditableBlock editText={getLngDate(LNG_KEYS.editSportsman, lng)} defaultText={getLngDate(LNG_KEYS.sportsmanPlaceholder, lng)} className="sportsman-city"/>
         <Toggle className="sportsman-toggle">{getLngDate(LNG_KEYS.p, lng)}</Toggle>
         <Points maxValue={99} className="sportsman-points"/>
     </div>

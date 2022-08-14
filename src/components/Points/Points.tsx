@@ -9,7 +9,7 @@ type PointsType = {
     circle?: boolean;
 }
 
-const Points: FC<PointsType> = ({maxValue, className, circle, fromZero}) => {
+const Points: FC<PointsType> = ({maxValue, className, circle, fromZero, children}) => {
     const [points, onClick, onRightClick] = useUpdateNumberByClick(maxValue, fromZero, circle);
 
     return <div
@@ -17,6 +17,7 @@ const Points: FC<PointsType> = ({maxValue, className, circle, fromZero}) => {
         onContextMenu={onRightClick}
         className={className}
     >
+        {children}
         {points}
     </div>
 }

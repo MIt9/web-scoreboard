@@ -10,7 +10,8 @@ export enum LNG_KEYS {
     stages="stages",
     labelLng="labelLng",
     labelMatch="labelMatch",
-    sportsmanPlaceholder="sportsmanPlaceholder"
+    sportsmanPlaceholder="sportsmanPlaceholder",
+    editSportsman="editSportsman"
 }
 
 const ENG = {
@@ -21,7 +22,8 @@ const ENG = {
     [LNG_KEYS.match]: "match",
     [LNG_KEYS.period]: "period",
     [LNG_KEYS.stages]: ["Qual","1/32", "1/16","1/8","1/4","1/2","Rep","F3","F"],
-    [LNG_KEYS.sportsmanPlaceholder]: "Rival"
+    [LNG_KEYS.sportsmanPlaceholder]: "Rival",
+    [LNG_KEYS.editSportsman]: "Enter sportsmen city"
 };
 
 const UKR = {
@@ -30,9 +32,10 @@ const UKR = {
     [LNG_KEYS.labelLng]: "Мова",
     [LNG_KEYS.labelMatch]: "Тривалість сутички",
     [LNG_KEYS.match] : "сутичка",
-    [LNG_KEYS.period] : "періуд",
+    [LNG_KEYS.period] : "період",
     [LNG_KEYS.stages] : ["Кв.","1/32", "1/16","1/8","1/4","1/2","Ут.","Ф3","Ф"],
-    [LNG_KEYS.sportsmanPlaceholder]: "Україна"
+    [LNG_KEYS.sportsmanPlaceholder]: "Україна",
+    [LNG_KEYS.editSportsman]: "Введіть місто спортсмена"
 };
 
 export const LANGUAGE_DIC: {[key: string]: {[key: string] : any | undefined}} = {

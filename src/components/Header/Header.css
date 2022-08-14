@@ -28,6 +28,7 @@
 .match, .period {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 .match-value {

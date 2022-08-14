@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, {FC} from "react";
 
 import {LanguageType} from "../../types";
 import {getLngDate, LNG_KEYS} from "../../services/lngService";
@@ -16,8 +16,14 @@ const Header: FC<LanguageType> = ({lng}) => {
             {getLngDate(LNG_KEYS.kg, lng)}
         </div>
         <div className="state">
-            <div className="match">{getLngDate(LNG_KEYS.match, lng)}: <EditableBlock defaultText={"0"} className="match-value"/></div>
-            <div className="period">{getLngDate(LNG_KEYS.period, lng)}: <Points maxValue={2} circle={true} fromZero={false} className="period-value"/></div>
+            <div className="match">
+                <EditableBlock editText={getLngDate(LNG_KEYS.match, lng)} defaultText={"0"}
+                               className="match-value">{getLngDate(LNG_KEYS.match, lng)}: </EditableBlock>
+            </div>
+            <div className="period"><Points maxValue={2} circle={true}
+                                            fromZero={false}
+                                            className="period-value">{getLngDate(LNG_KEYS.period, lng)}: </Points>
+            </div>
         </div>
     </header>
 };
